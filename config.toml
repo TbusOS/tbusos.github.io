@@ -1,6 +1,8 @@
-baseURL = "/"
+#baseURL = "/"
+#baseURL = "http://127.0.0.1:"
+baseURL = "https://tbusos.github.io/TbusBlog"
 title = "Goldydocs"
-
+publishdir = "docs"
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -53,6 +55,7 @@ angledQuotes = false
 latexDashes = true
 
 # Image processing configuration.
+#
 [imaging]
 resampleFilter = "CatmullRom"
 quality = 75
