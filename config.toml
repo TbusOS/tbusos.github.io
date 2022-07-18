@@ -1,6 +1,6 @@
 #baseURL = "/"
 #baseURL = "http://127.0.0.1:"
-baseURL = "https://tbusos.github.io/TbusBlog"
+baseURL = "https://tbusos.github.io"
 title = "Goldydocs"
 publishdir = "docs"
 # Language settings
