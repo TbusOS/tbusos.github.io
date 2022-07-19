@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – qemu</title>
+    <title>Tbus – qemu</title>
     <link>https://tbusos.github.io/categories/qemu/</link>
-    <description>Recent content in qemu on Goldydocs</description>
+    <description>Recent content in qemu on Tbus</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0000</lastBuildDate>
     
@@ -15,11 +15,11 @@
     
     
     <item>
-      <title>Blog: how-use-qemu-lunch-linux</title>
-      <link>https://tbusos.github.io/blog/2022/07/18/how-use-qemu-lunch-linux/</link>
+      <title>Blog: howto-use-qemu-lunch-linux</title>
+      <link>https://tbusos.github.io/blog/2022/07/18/howto-use-qemu-lunch-linux/</link>
       <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/blog/2022/07/18/how-use-qemu-lunch-linux/</guid>
+      <guid>https://tbusos.github.io/blog/2022/07/18/howto-use-qemu-lunch-linux/</guid>
       <description>
         
         
