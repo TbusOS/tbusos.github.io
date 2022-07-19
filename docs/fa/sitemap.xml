@@ -89,6 +89,23 @@
                 href="https://tbusos.github.io/fa/categories/"
                 />
   </url><url>
+    <loc>https://tbusos.github.io/fa/false/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tbusos.github.io/false/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://tbusos.github.io/no/false/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://tbusos.github.io/fa/false/"
+                />
+  </url><url>
     <loc>https://tbusos.github.io/fa/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -104,6 +121,40 @@
                 rel="alternate"
                 hreflang="fa"
                 href="https://tbusos.github.io/fa/tags/"
+                />
+  </url><url>
+    <loc>https://tbusos.github.io/fa/tango/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tbusos.github.io/tango/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://tbusos.github.io/no/tango/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://tbusos.github.io/fa/tango/"
+                />
+  </url><url>
+    <loc>https://tbusos.github.io/fa/true/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tbusos.github.io/true/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="https://tbusos.github.io/no/true/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://tbusos.github.io/fa/true/"
                 />
   </url><url>
     <loc>https://tbusos.github.io/fa/</loc>
