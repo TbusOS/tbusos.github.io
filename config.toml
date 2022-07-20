@@ -5,7 +5,7 @@ baseURL = "https://tbusos.github.io"
 title = "Tbus"
 publishdir = "docs"
 # Language settings
-contentDir = "content/alpha"
+contentDir = "content/en"
 defaultContentLanguage = "alpha"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
