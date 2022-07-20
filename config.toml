@@ -5,7 +5,7 @@ baseURL = "https://tbusos.github.io"
 title = "Tbus"
 publishdir = "docs"
 # Language settings
-contentDir = "content/en"
+contentDir = "content/alpha"
 defaultContentLanguage = "alpha"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -73,7 +73,6 @@ id = "UA-00000000-0"
 [languages.alpha]
 title = "Tbus"
 description = "A Docsy example site"
-
 languageName ="alpha"
 # Weight used for sorting.
 weight = 1
