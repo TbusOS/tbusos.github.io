@@ -18,33 +18,42 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>如何使用qemu启动linux | Tbus</title>
-<meta name="description" content="版本信息
-系统版本：Ubuntu Server 20.04 LTS 64bit
-编译器：9.4.0
-交叉编译器：arm-linux-gnueabi-gcc  (Linaro GCC 7.5-2019.12)  7.5.0
-linux内核：linux-5.15.53
-busybox：1.35.0 …">
-<meta property="og:title" content="如何使用qemu启动linux" />
-<meta property="og:description" content="版本信息 系统版本：Ubuntu Server 20.04 LTS 64bit 编译器：9.4.0 交叉编译器：arm-linux-gnueabi-gcc (Linaro GCC 7.5-2019.12) 7.5.0 linux内核：linux-5.15.53 busybox：1.35.0 QEMU：7.0.0 ninja-build：1.10.0
-获取交叉编译链 下载地址：Linaro Releases tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	#解压 vi ~/.bashrc	#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件 在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录 export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH
-source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install ninja-build	#Need ninja. Ninja is a small build system with a focus on speed. wget https://download.qemu.org/qemu-7.0.0.tar.xz	#下载源码 tar xvf qemu-7.0.0.tar.xz	#解压 mkdir qemu_build &amp;&amp; cd qemu_build	# 在下载目录新建文件夹build # 以下均在/build目录下 ../qemu-7.0.0/configure make &amp;&amp; make install	#出去喝杯咖啡，打两把游戏在来看结果 编译成功后，qemu-system-arm就生成在当前目录 和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://tbusos.github.io/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-07-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-19T09:19:52+00:00" /><meta property="og:site_name" content="Tbus" />
+<title>Typora 图床设置 | Tbus</title>
+<meta name="description" content="1. Typora 设置
+设置完成后点击下载PicGo下载PicGo
 
-<meta itemprop="name" content="如何使用qemu启动linux">
-<meta itemprop="description" content="版本信息 系统版本：Ubuntu Server 20.04 LTS 64bit 编译器：9.4.0 交叉编译器：arm-linux-gnueabi-gcc (Linaro GCC 7.5-2019.12) 7.5.0 linux内核：linux-5.15.53 busybox：1.35.0 QEMU：7.0.0 ninja-build：1.10.0
-获取交叉编译链 下载地址：Linaro Releases tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	#解压 vi ~/.bashrc	#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件 在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录 export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH
-source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install ninja-build	#Need ninja. Ninja is a small build system with a focus on speed. wget https://download.qemu.org/qemu-7.0.0.tar.xz	#下载源码 tar xvf qemu-7.0.0.tar.xz	#解压 mkdir qemu_build &amp;&amp; cd qemu_build	# 在下载目录新建文件夹build # 以下均在/build目录下 ../qemu-7.0.0/configure make &amp;&amp; make install	#出去喝杯咖啡，打两把游戏在来看结果 编译成功后，qemu-system-arm就生成在当前目录 和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。"><meta itemprop="datePublished" content="2022-07-18T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-07-19T09:19:52+00:00" />
-<meta itemprop="wordCount" content="284">
-<meta itemprop="keywords" content="docs," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="如何使用qemu启动linux"/>
-<meta name="twitter:description" content="版本信息 系统版本：Ubuntu Server 20.04 LTS 64bit 编译器：9.4.0 交叉编译器：arm-linux-gnueabi-gcc (Linaro GCC 7.5-2019.12) 7.5.0 linux内核：linux-5.15.53 busybox：1.35.0 QEMU：7.0.0 ninja-build：1.10.0
-获取交叉编译链 下载地址：Linaro Releases tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	#解压 vi ~/.bashrc	#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件 在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录 export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH
-source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install ninja-build	#Need ninja. Ninja is a small build system with a focus on speed. wget https://download.qemu.org/qemu-7.0.0.tar.xz	#下载源码 tar xvf qemu-7.0.0.tar.xz	#解压 mkdir qemu_build &amp;&amp; cd qemu_build	# 在下载目录新建文件夹build # 以下均在/build目录下 ../qemu-7.0.0/configure make &amp;&amp; make install	#出去喝杯咖啡，打两把游戏在来看结果 编译成功后，qemu-system-arm就生成在当前目录 和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。"/>
+2. PicGo设置
+
+安装github-plus插件
+
+
+
+去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在
+
+
+
+创建Token至少选择以下权限
+
+
+
+然后再回到PicGo …">
+<meta property="og:title" content="Typora 图床设置" />
+<meta property="og:description" content="1. Typora 设置 设置完成后点击下载PicGo下载PicGo
+2. PicGo设置 安装github-plus插件 去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在 创建Token至少选择以下权限 然后再回到PicGo进行一下设置一下 设置完以后可以在上传区上传一个图片测试 在Typora中添加图片将自动上传到github " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tbusos.github.io/blog/2022/07/20/typora-%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-20T00:00:00+00:00" /><meta property="og:site_name" content="Tbus" />
+
+<meta itemprop="name" content="Typora 图床设置">
+<meta itemprop="description" content="1. Typora 设置 设置完成后点击下载PicGo下载PicGo
+2. PicGo设置 安装github-plus插件 去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在 创建Token至少选择以下权限 然后再回到PicGo进行一下设置一下 设置完以后可以在上传区上传一个图片测试 在Typora中添加图片将自动上传到github "><meta itemprop="datePublished" content="2022-07-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-07-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="12">
+<meta itemprop="keywords" content="blog,markdown,typora," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Typora 图床设置"/>
+<meta name="twitter:description" content="1. Typora 设置 设置完成后点击下载PicGo下载PicGo
+2. PicGo设置 安装github-plus插件 去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在 创建Token至少选择以下权限 然后再回到PicGo进行一下设置一下 设置完以后可以在上传区上传一个图片测试 在Typora中添加图片将自动上传到github "/>
 
 
 
@@ -127,7 +136,7 @@ if (!doNotTrack) {
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/zh/blog/2022/07/18/how-use-qemu-lunch-linux/">beata1</a>
+	<a class="dropdown-item" href="/zh/">beata1</a>
 	
 </div>
 			</li>
@@ -160,7 +169,7 @@ if (!doNotTrack) {
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/zh/blog/2022/07/18/how-use-qemu-lunch-linux/">beata1</a>
+	<a class="dropdown-item" href="/zh/">beata1</a>
 	
 </div>
     </div>
@@ -172,9 +181,9 @@ if (!doNotTrack) {
   <a href="/blog/news/" title="News About Docsy" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-blognews"><span class="">环境搭建</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220720typora-e59bbee5ba8ae8aebee7bdae-li">
-  <a href="/blog/2022/07/20/typora-%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-blog20220720typora-e59bbee5ba8ae8aebee7bdae"><span class="">Typora 图床设置</span></a>
+  <a href="/blog/2022/07/20/typora-%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-blog20220720typora-e59bbee5ba8ae8aebee7bdae"><span class="td-sidebar-nav-active-item">Typora 图床设置</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220718e5a682e4bd95e4bdbfe794a8qemue590afe58aa8linux-li">
-  <a href="/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-blog20220718e5a682e4bd95e4bdbfe794a8qemue590afe58aa8linux"><span class="td-sidebar-nav-active-item">如何使用qemu启动linux</span></a>
+  <a href="/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-blog20220718e5a682e4bd95e4bdbfe794a8qemue590afe58aa8linux"><span class="">如何使用qemu启动linux</span></a>
 </li>
   </ul>
 </li>
@@ -188,10 +197,10 @@ if (!doNotTrack) {
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href="https://github.com/TbusOS/tbusos.github.io/tree/master/content/en/blog/news/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
-  <a href="https://github.com/TbusOS/tbusos.github.io/edit/master/content/en/blog/news/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-  <a href="https://github.com/TbusOS/tbusos.github.io/new/master/content/en/blog/news/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
-  <a href="https://github.com/TbusOS/tbusos.github.io/issues/new?title=%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/TbusOS/tbusos.github.io/tree/master/content/en/blog/news/typora-blog.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+  <a href="https://github.com/TbusOS/tbusos.github.io/edit/master/content/en/blog/news/typora-blog.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/TbusOS/tbusos.github.io/new/master/content/en/blog/news/typora-blog.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+  <a href="https://github.com/TbusOS/tbusos.github.io/issues/new?title=Typora%20%e5%9b%be%e5%ba%8a%e8%ae%be%e7%bd%ae" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
   <a href="https://github.com/TbusOS/tbusos.github.io/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
   <a id="print" href="https://tbusos.github.io/blog/news/_print/"><i class="fa fa-print fa-fw"></i> Print entire section</a>
 
@@ -202,17 +211,9 @@ if (!doNotTrack) {
 
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#验证只启动linux内核">验证只启动Linux内核</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#编译">编译</a></li>
-    <li><a href="#制作文件系统镜像">制作文件系统镜像</a>
-      <ul>
-        <li><a href="#根目录构建">根目录构建</a></li>
-      </ul>
-    </li>
-    <li><a href="#启动qemu">启动qemu</a></li>
+    <li><a href="#1-typora-设置">1. Typora 设置</a></li>
+    <li><a href="#2-picgo设置">2. PicGo设置</a></li>
+    <li><a href="#在typora中添加图片将自动上传到github">在Typora中添加图片将自动上传到github</a></li>
   </ul>
 </nav></div>
 
@@ -301,11 +302,11 @@ if (!doNotTrack) {
             </a>
             
 <div class="td-content">
-	<h1>如何使用qemu启动linux</h1>
+	<h1>Typora 图床设置</h1>
 	
 	<div class="td-byline mb-4">
-		By <b>廖文雄</b> |
-		<time datetime="2022-07-18" class="text-muted">Monday, July 18, 2022</time>
+		By <b>Liulf</b> |
+		<time datetime="2022-07-20" class="text-muted">Wednesday, July 20, 2022</time>
 	</div>
 	<header class="article-meta">
 		
@@ -318,9 +319,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Categories:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://tbusos.github.io/categories/linux/" data-taxonomy-term="linux"><span class="taxonomy-label">linux</span></a></li>
-    
-      <li><a class="taxonomy-term" href="https://tbusos.github.io/categories/qemu/" data-taxonomy-term="qemu"><span class="taxonomy-label">qemu</span></a></li>
+      <li><a class="taxonomy-term" href="https://tbusos.github.io/categories/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span></a></li>
     
   </ul>
 </div>
@@ -337,7 +336,11 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://tbusos.github.io/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span></a></li>
+      <li><a class="taxonomy-term" href="https://tbusos.github.io/tags/blog/" data-taxonomy-term="blog"><span class="taxonomy-label">blog</span></a></li>
+    
+      <li><a class="taxonomy-term" href="https://tbusos.github.io/tags/markdown/" data-taxonomy-term="markdown"><span class="taxonomy-label">markdown</span></a></li>
+    
+      <li><a class="taxonomy-term" href="https://tbusos.github.io/tags/typora/" data-taxonomy-term="typora"><span class="taxonomy-label">typora</span></a></li>
     
   </ul>
 </div>
@@ -354,113 +357,37 @@ if (!doNotTrack) {
 
 		
 	</header>
-	<h1 id="版本信息">版本信息</h1>
-<p>系统版本：Ubuntu Server 20.04 LTS 64bit
-编译器：9.4.0
-交叉编译器：arm-linux-gnueabi-gcc  (Linaro GCC 7.5-2019.12)  7.5.0
-linux内核：linux-5.15.53
-busybox：1.35.0
-QEMU：7.0.0
-ninja-build：1.10.0</p>
-<h1 id="获取交叉编译链">获取交叉编译链</h1>
-<p>下载地址：<a href="https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabi/">Linaro Releases</a>
-<img src="C:%5CUsers%5Cliulf%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cpictures.assets%5Cimage-20220718155906055.png" alt="image-20220718155906055"></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	<span style="color:#8f5902;font-style:italic">#解压</span>
-</span></span><span style="display:flex;"><span>vi ~/.bashrc	<span style="color:#8f5902;font-style:italic">#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件</span>
-</span></span></code></pre></div><p><img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160818198.png" alt="image-20220718160818198">
-在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录
-export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">source</span> ~/.bashrc	<span style="color:#8f5902;font-style:italic">#让.bashrc生效</span>
-</span></span></code></pre></div><p>安装成功
-<img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160830447.png" alt="image-20220718160830447"></p>
-<h1 id="编译qemu">编译QEMU</h1>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install ninja-build	<span style="color:#8f5902;font-style:italic">#Need ninja. Ninja is a small build system with a focus on speed. </span>
-</span></span><span style="display:flex;"><span>wget https://download.qemu.org/qemu-7.0.0.tar.xz	<span style="color:#8f5902;font-style:italic">#下载源码</span>
-</span></span><span style="display:flex;"><span>tar xvf qemu-7.0.0.tar.xz	<span style="color:#8f5902;font-style:italic">#解压</span>
-</span></span><span style="display:flex;"><span>mkdir qemu_build <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#204a87">cd</span> qemu_build	<span style="color:#8f5902;font-style:italic"># 在下载目录新建文件夹build</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># 以下均在/build目录下</span>
-</span></span><span style="display:flex;"><span>../qemu-7.0.0/configure
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>make <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> make install	<span style="color:#8f5902;font-style:italic">#出去喝杯咖啡，打两把游戏在来看结果</span>
-</span></span></code></pre></div><p>编译成功后，qemu-system-arm就生成在当前目录
-和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vi ~/.bashrc	<span style="color:#8f5902;font-style:italic">#修改环境变量PATH</span>
-</span></span></code></pre></div><p>在.bashrc文件上次修改的基础上，重新修改
-export PATH=/home/ubuntu/qemu_build:/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">source</span> ~/.bashrc	<span style="color:#8f5902;font-style:italic">#让.bashrc生效</span>
-</span></span></code></pre></div><p>安装成功
-<img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160842204.png" alt="image-20220718160842204"></p>
-<h1 id="编译linux内核">编译Linux内核</h1>
-<p>内核代码下载地址：<a href="https://www.kernel.org/">The Linux Kernel Archives</a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- vexpress_defconfig
-</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- menuconfig
-</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- -j2
-</span></span></code></pre></div><p>ps：Versatile Express系统由ARM Ltd提供，作为CortexA9四核处理器的开发环境，硬件由uATX主板和CoreTile Express A9x4子板组成。</p>
-<h2 id="验证只启动linux内核">验证只启动Linux内核</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>qemu-system-arm -M vexpress-a9 -m 128M -kernel ~/linux-5.15.53/arch/arm/boot/zImage -dtb ~/linux-5.15.53/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -nographic
-</span></span></code></pre></div><p>ps：内核和设备树的路径每个人可能不一样，需要自己注意下</p>
-<p><img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160857131.png" alt="image-20220718160857131">
-启动成功，但还没有文件系统，操作系统稍后制作。
-输入ctrl+A+x退出qemu</p>
-<h1 id="编译busybox制作文件系统">编译busybox，制作文件系统</h1>
-<h2 id="编译">编译</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wget https://busybox.net/downloads/busybox-1.35.0.tar.bz2	<span style="color:#8f5902;font-style:italic">#下载源码</span>
-</span></span><span style="display:flex;"><span>tar xvf busybox-1.35.0.tar.bz2	<span style="color:#8f5902;font-style:italic">#解压</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> busybox-1.35.0/
-</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- defconfig
-</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- menuconfig
-</span></span></code></pre></div><ul>
-<li>
-<blockquote>
-<p>Settings —&gt;</p>
+	<h2 id="1-typora-设置">1. Typora 设置</h2>
+<p>设置完成后点击下载PicGo下载PicGo</p>
+<p><img src="https://raw.githubusercontent.com/gitliulf/picture/main/1658280424709.png" alt="1658280424709"></p>
+<h2 id="2-picgo设置">2. PicGo设置</h2>
 <ul>
-<li>[*] Build static binary (no shared libs) #使用静态库</li>
+<li>安装github-plus插件</li>
 </ul>
-</blockquote>
-</li>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283204030.png" alt="1658283204030"></p>
+<ul>
+<li>去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- -j4
-</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- install
-</span></span></code></pre></div><ul>
-<li>生成结果位于：当前根目录下的_install文件夹下</li>
-<li>备注：默认安装到根目录下的_install，若想更改，可以通过menuconfig里面的选项更改</li>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283319167.png" alt="1658283319167"></p>
+<ul>
+<li>创建Token至少选择以下权限</li>
 </ul>
-<h2 id="制作文件系统镜像">制作文件系统镜像</h2>
-<h3 id="根目录构建">根目录构建</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p rootfs/<span style="color:#ce5c00;font-weight:bold">{</span>dev,etc/init.d,lib,proc,sys<span style="color:#ce5c00;font-weight:bold">}</span>   <span style="color:#8f5902;font-style:italic">#创建根目录</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>cp -raf busybox-1.35.0/_install/* rootfs        <span style="color:#8f5902;font-style:italic">#拷贝busybox命令到根目录</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty1 c <span style="color:#0000cf;font-weight:bold">4</span> 1			<span style="color:#8f5902;font-style:italic">#创建4个tty端终设备</span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty1 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">2</span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty2 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">2</span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty3 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">3</span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty4 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">4</span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/console c <span style="color:#0000cf;font-weight:bold">5</span> 1		<span style="color:#8f5902;font-style:italic">#创建console字符设备</span>
-</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/null c <span style="color:#0000cf;font-weight:bold">1</span> 3			<span style="color:#8f5902;font-style:italic">#创建null 字符设备</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>vim rootfs/etc/init.d/rcS						<span style="color:#8f5902;font-style:italic">#输入如下内容</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#!/bin/bash 
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>mount -t proc proc /proc 
-</span></span><span style="display:flex;"><span>mount -t sysfs sysfs /sys 
-</span></span><span style="display:flex;"><span>/sbin/mdev -s 
-</span></span><span style="display:flex;"><span><span style="color:#204a87">echo</span> /sbin/mdev &gt; /proc/sys/kernel/hotplug      <span style="color:#8f5902;font-style:italic">#支持热插拔</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo chmod +x rootfs/etc/init.d/rcS
-</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> rootfs
-</span></span><span style="display:flex;"><span>find ./ <span style="color:#000;font-weight:bold">|</span> cpio -o --format<span style="color:#ce5c00;font-weight:bold">=</span>newc &gt; ./rootfs.img
-</span></span></code></pre></div><h2 id="启动qemu">启动qemu</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>qemu-system-arm -M vexpress-a9 -m 128M -kernel linux-5.15.53/arch/arm/boot/zImage -dtb linux-5.15.53/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -append <span style="color:#4e9a06">&#34;root=/dev/ram rdinit=sbin/init console=ttyAMA0&#34;</span> -nographic -initrd rootfs/rootfs.img
-</span></span></code></pre></div><p>启动成功
-<img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160906354.png" alt="image-20220718160906354"></p>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283463904.png" alt=""></p>
+<ul>
+<li>然后再回到PicGo进行一下设置一下</li>
+<li>设置完以后可以在上传区上传一个图片测试</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283059013.png" alt=""></p>
+<h2 id="在typora中添加图片将自动上传到github">在Typora中添加图片将自动上传到github</h2>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283928561.png" alt="1658283928561"></p>
 
 	
 
 	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
   <li>
-    <a class="btn btn-primary disabled"><span class="mr-1">←</span>Previous</a>
+    <a href="/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/" aria-label="Previous - 如何使用qemu启动linux" class="btn btn-primary"><span class="mr-1">←</span>Previous</a>
   </li>
-    <a href="/blog/2022/07/20/typora-%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/" aria-label="Next - Typora 图床设置" class="btn btn-primary">Next<span class="ml-1">→</span></a>
+    <a class="btn btn-primary disabled">Next<span class="ml-1">→</span></a>
   </li>
 </ul>
 

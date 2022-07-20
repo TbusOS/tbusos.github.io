@@ -14,6 +14,42 @@
     
     
     <item>
+      <title>Blog: Typora 图床设置</title>
+      <link>https://tbusos.github.io/blog/2022/07/20/typora-%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://tbusos.github.io/blog/2022/07/20/typora-%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;1-typora-设置&#34;&gt;1. Typora 设置&lt;/h2&gt;
+&lt;p&gt;设置完成后点击下载PicGo下载PicGo&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gitliulf/picture/main/1658280424709.png&#34; alt=&#34;1658280424709&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-picgo设置&#34;&gt;2. PicGo设置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;安装github-plus插件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283204030.png&#34; alt=&#34;1658283204030&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283319167.png&#34; alt=&#34;1658283319167&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建Token至少选择以下权限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283463904.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;然后再回到PicGo进行一下设置一下&lt;/li&gt;
+&lt;li&gt;设置完以后可以在上传区上传一个图片测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283059013.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在typora中添加图片将自动上传到github&#34;&gt;在Typora中添加图片将自动上传到github&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283928561.png&#34; alt=&#34;1658283928561&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: 如何使用qemu启动linux</title>
       <link>https://tbusos.github.io/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/</link>
       <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
