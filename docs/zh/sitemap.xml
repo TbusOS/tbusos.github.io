@@ -24,7 +24,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/docs/tutorials/multi-bear/"
                 />
     <xhtml:link
@@ -46,7 +46,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/docs/tutorials/tutorial2/"
                 />
     <xhtml:link
@@ -62,7 +62,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/docs/tutorials/"
                 />
     <xhtml:link
@@ -81,7 +81,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/docs/"
                 />
     <xhtml:link
@@ -94,7 +94,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/blog/news/"
                 />
     <xhtml:link
@@ -110,7 +110,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/categories/"
                 />
     <xhtml:link
@@ -123,7 +123,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/tags/docs/"
                 />
     <xhtml:link
@@ -133,10 +133,10 @@
                 />
   </url><url>
     <loc>https://tbusos.github.io/zh/categories/linux/</loc>
-    <lastmod>2022-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/categories/linux/"
                 />
     <xhtml:link
@@ -146,10 +146,10 @@
                 />
   </url><url>
     <loc>https://tbusos.github.io/zh/categories/qemu/</loc>
-    <lastmod>2022-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/categories/qemu/"
                 />
     <xhtml:link
@@ -162,7 +162,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/tags/"
                 />
     <xhtml:link
@@ -172,10 +172,10 @@
                 />
   </url><url>
     <loc>https://tbusos.github.io/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</loc>
-    <lastmod>2022-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/"
                 />
     <xhtml:link
@@ -215,7 +215,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/about/"
                 />
     <xhtml:link
@@ -228,7 +228,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/blog/"
                 />
     <xhtml:link
@@ -240,7 +240,7 @@
     <loc>https://tbusos.github.io/zh/false/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/false/"
                 />
     <xhtml:link
@@ -256,7 +256,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/search/"
                 />
     <xhtml:link
@@ -268,7 +268,7 @@
     <loc>https://tbusos.github.io/zh/tango/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/tango/"
                 />
     <xhtml:link
@@ -281,7 +281,7 @@
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/"
                 />
     <xhtml:link
@@ -293,7 +293,7 @@
     <loc>https://tbusos.github.io/zh/true/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="alpha"
                 href="https://tbusos.github.io/true/"
                 />
     <xhtml:link
