@@ -187,6 +187,16 @@ This is the multi-page printable view of this section.
     
 	
 
+    <li><a href="#pg-56c0a5545f8d9c986421a0e0b6d36723">Hugo构建</a></li>
+
+
+
+    
+  
+    
+    
+	
+
     <li><a href="#pg-91afeababdcc262892ac6e5b9c284cf1">Typora 图床设置</a></li>
 
 
@@ -270,6 +280,68 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-56c0a5545f8d9c986421a0e0b6d36723">Hugo构建</h1>
+	
+	<div class="td-byline mb-4">
+		By <b>Liulf</b> |
+        
+		<time datetime="2022-07-20" class="text-muted">Wednesday, July 20, 2022</time>
+        
+	</div>
+	<h2 id="准备工作">准备工作</h2>
+<h3 id="安装go">安装go</h3>
+<blockquote>
+<p>下载go <a href="https://studygolang.com/dl">https://studygolang.com/dl</a>
+下载最新的golang版本后安装</p>
+</blockquote>
+<h3 id="安装npm">安装npm</h3>
+<blockquote>
+<p><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a>
+下载nodejs安装后会有npm命令</p>
+</blockquote>
+<h3 id="安装hugo">安装hugo</h3>
+<blockquote>
+<p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.101.0">https://github.com/gohugoio/hugo/releases/tag/v0.101.0</a>
+<a href="https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Windows-64bit.zip">https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Windows-64bit.zip</a>
+下载带extended的最新版本并安装</p>
+</blockquote>
+<h2 id="clone-博客仓库">Clone 博客仓库</h2>
+<blockquote>
+<p>将博客clone到本地
+尽量使用ssh地址
+并再github上配置好公钥</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone git@github.com:TbusOS/tbusos.github.io.git
+</span></span></code></pre></div><h2 id="构建">构建</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm install 	<span style="color:#8f5902;font-style:italic">#下载 主题中的依赖</span>
+</span></span><span style="display:flex;"><span>hugo mod graph 	<span style="color:#8f5902;font-style:italic"># 下载hugo需要go依赖</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#第一次构建以上两步可能时间比较久，后续不用执行这两个步骤</span>
+</span></span><span style="display:flex;"><span>hugo server 
+</span></span></code></pre></div><p>执行可以在本地 <a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a> 预览博客</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo <span style="color:#8f5902;font-style:italic">#执行hugo 可以完成构建，在docs目录下是要提交的文件，content目录是文章的目录需要一并提交</span>
+</span></span><span style="display:flex;"><span>git add . <span style="color:#8f5902;font-style:italic">#添加到提交目录</span>
+</span></span><span style="display:flex;"><span>git push **** <span style="color:#8f5902;font-style:italic">#push到github</span>
+</span></span></code></pre></div><hr>
+<p>至此完成一个完整的博客提交流程</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-91afeababdcc262892ac6e5b9c284cf1">Typora 图床设置</h1>
 	
 	<div class="td-byline mb-4">
