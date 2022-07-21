@@ -32,13 +32,13 @@ source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-07-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-21T04:24:48+00:00" /><meta property="og:site_name" content="Tbus" />
+<meta property="article:modified_time" content="2022-07-18T00:00:00+00:00" /><meta property="og:site_name" content="Tbus" />
 
 <meta itemprop="name" content="如何使用qemu启动linux">
 <meta itemprop="description" content="版本信息 系统版本：Ubuntu Server 20.04 LTS 64bit 编译器：9.4.0 交叉编译器：arm-linux-gnueabi-gcc (Linaro GCC 7.5-2019.12) 7.5.0 linux内核：linux-5.15.53 busybox：1.35.0 QEMU：7.0.0 ninja-build：1.10.0
 获取交叉编译链 下载地址：Linaro Releases tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	#解压 vi ~/.bashrc	#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件 在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录 export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH
 source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install ninja-build	#Need ninja. Ninja is a small build system with a focus on speed. wget https://download.qemu.org/qemu-7.0.0.tar.xz	#下载源码 tar xvf qemu-7.0.0.tar.xz	#解压 mkdir qemu_build &amp;&amp; cd qemu_build	# 在下载目录新建文件夹build # 以下均在/build目录下 ../qemu-7.0.0/configure make &amp;&amp; make install	#出去喝杯咖啡，打两把游戏在来看结果 编译成功后，qemu-system-arm就生成在当前目录 和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。"><meta itemprop="datePublished" content="2022-07-18T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-07-21T04:24:48+00:00" />
+<meta itemprop="dateModified" content="2022-07-18T00:00:00+00:00" />
 <meta itemprop="wordCount" content="284">
 <meta itemprop="keywords" content="docs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何使用qemu启动linux"/>
