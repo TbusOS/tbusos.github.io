@@ -170,6 +170,57 @@ if (!doNotTrack) {
     
 	
 
+    <li><a href="#pg-1fcdc2a680ef32d942443bca97445dd6">News About Docsy</a></li>
+
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+
+    <li><a href="#pg-df3136d8f7978ca12f4760540aabbd65">Hugo构建</a></li>
+
+
+
+    
+  
+    
+    
+	
+
+    <li><a href="#pg-edeec9ee01db27eafc19b14430d31b9e">Typora 图床设置</a></li>
+
+
+
+    
+  
+    
+    
+	
+
+    <li><a href="#pg-0516f1ee6fdef2a3c021ba7c1ca25f2b">如何使用qemu启动linux</a></li>
+
+
+
+    
+  
+
+    </ul>
+    
+  
+    
+    
+	
+
     <li><a href="#pg-995c359e0eda056a2e3b98e604c59580">News About Docsy</a></li>
 
 
@@ -247,6 +298,303 @@ if (!doNotTrack) {
   
 
 <div class="td-content" style="">
+    <h1 id="pg-1fcdc2a680ef32d942443bca97445dd6">News About Docsy</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2022-07-20" class="text-muted">Wednesday, July 20, 2022</time>
+        
+	</div>
+	
+</div>
+
+
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="">
+    <h1 id="pg-df3136d8f7978ca12f4760540aabbd65">Hugo构建</h1>
+	
+	<div class="td-byline mb-4">
+		 <b>Liulf</b> |
+        
+		<time datetime="2022-07-20" class="text-muted">Wednesday, July 20, 2022</time>
+        
+	</div>
+	<h2 id="准备工作">准备工作</h2>
+<h3 id="安装go">安装go</h3>
+<blockquote>
+<p>下载go <a href="https://studygolang.com/dl">https://studygolang.com/dl</a>
+下载最新的golang版本后安装</p>
+</blockquote>
+<h3 id="安装npm">安装npm</h3>
+<blockquote>
+<p><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a>
+下载nodejs安装后会有npm命令</p>
+</blockquote>
+<h3 id="安装hugo">安装hugo</h3>
+<blockquote>
+<p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.101.0">https://github.com/gohugoio/hugo/releases/tag/v0.101.0</a>
+<a href="https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Windows-64bit.zip">https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Windows-64bit.zip</a>
+下载带extended的最新版本并安装</p>
+</blockquote>
+<h2 id="clone-博客仓库">Clone 博客仓库</h2>
+<blockquote>
+<p>将博客clone到本地
+尽量使用ssh地址
+并再github上配置好公钥</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone git@github.com:TbusOS/tbusos.github.io.git
+</span></span></code></pre></div><h2 id="构建">构建</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm install 	<span style="color:#8f5902;font-style:italic">#下载 主题中的依赖</span>
+</span></span><span style="display:flex;"><span>hugo mod graph 	<span style="color:#8f5902;font-style:italic"># 下载hugo需要go依赖</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#第一次构建以上两步可能时间比较久，后续不用执行这两个步骤</span>
+</span></span><span style="display:flex;"><span>hugo server 
+</span></span></code></pre></div><p>执行可以在本地 <a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a> 预览博客</p>
+<h2 id="试着提交">试着提交</h2>
+<blockquote>
+<p>在目录 content/alpha/blog/environment-build 下按照已经有的文档写一篇文档</p>
+</blockquote>
+<blockquote>
+<p>重新执行hugo server 可以完成构建</p>
+</blockquote>
+<blockquote>
+<p>再次访问<a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a> 预览自己的文章</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo <span style="color:#8f5902;font-style:italic">#执行hugo 可以完成构建，在docs目录下是要提交的文件，content目录是文章的目录需要一并提交</span>
+</span></span><span style="display:flex;"><span>git add . <span style="color:#8f5902;font-style:italic">#添加到提交目录</span>
+</span></span><span style="display:flex;"><span>git push **** <span style="color:#8f5902;font-style:italic">#push到github</span>
+</span></span></code></pre></div><hr>
+<p>至此完成一个完整的博客提交流程</p>
+<h2 id="注意事项">注意事项</h2>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">注意事项!</h4>
+
+    构建的时候发现有时候docs目录没有及时更新，提交之前建议手动删除docs再重新构建
+
+</div>
+
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
+    <h1 id="pg-edeec9ee01db27eafc19b14430d31b9e">Typora 图床设置</h1>
+	
+	<div class="td-byline mb-4">
+		 <b>Liulf</b> |
+        
+		<time datetime="2022-07-20" class="text-muted">Wednesday, July 20, 2022</time>
+        
+	</div>
+	<h2 id="1-typora-设置">1. Typora 设置</h2>
+<p>设置完成后点击下载PicGo下载PicGo</p>
+<p><img src="https://raw.githubusercontent.com/gitliulf/picture/main/1658280424709.png" alt="1658280424709"></p>
+<h2 id="2-picgo设置">2. PicGo设置</h2>
+<ul>
+<li>安装github-plus插件</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283204030.png" alt="1658283204030"></p>
+<ul>
+<li>去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283319167.png" alt="1658283319167"></p>
+<ul>
+<li>创建Token至少选择以下权限</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283463904.png" alt=""></p>
+<ul>
+<li>然后再回到PicGo进行一下设置一下</li>
+<li>设置完以后可以在上传区上传一个图片测试</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283059013.png" alt=""></p>
+<h2 id="在typora中添加图片将自动上传到github">在Typora中添加图片将自动上传到github</h2>
+<p><img src="https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283928561.png" alt="1658283928561"></p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
+    <h1 id="pg-0516f1ee6fdef2a3c021ba7c1ca25f2b">如何使用qemu启动linux</h1>
+	
+	<div class="td-byline mb-4">
+		 <b>廖文雄</b> |
+        
+		<time datetime="2022-07-18" class="text-muted">Monday, July 18, 2022</time>
+        
+	</div>
+	<h1 id="版本信息">版本信息</h1>
+<p>系统版本：Ubuntu Server 20.04 LTS 64bit
+编译器：9.4.0
+交叉编译器：arm-linux-gnueabi-gcc  (Linaro GCC 7.5-2019.12)  7.5.0
+linux内核：linux-5.15.53
+busybox：1.35.0
+QEMU：7.0.0
+ninja-build：1.10.0</p>
+<h1 id="获取交叉编译链">获取交叉编译链</h1>
+<p>下载地址：<a href="https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabi/">Linaro Releases</a>
+<img src="C:%5CUsers%5Cliulf%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cpictures.assets%5Cimage-20220718155906055.png" alt="image-20220718155906055"></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	<span style="color:#8f5902;font-style:italic">#解压</span>
+</span></span><span style="display:flex;"><span>vi ~/.bashrc	<span style="color:#8f5902;font-style:italic">#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件</span>
+</span></span></code></pre></div><p><img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160818198.png" alt="image-20220718160818198">
+在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录
+export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">source</span> ~/.bashrc	<span style="color:#8f5902;font-style:italic">#让.bashrc生效</span>
+</span></span></code></pre></div><p>安装成功
+<img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160830447.png" alt="image-20220718160830447"></p>
+<h1 id="编译qemu">编译QEMU</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install ninja-build	<span style="color:#8f5902;font-style:italic">#Need ninja. Ninja is a small build system with a focus on speed. </span>
+</span></span><span style="display:flex;"><span>wget https://download.qemu.org/qemu-7.0.0.tar.xz	<span style="color:#8f5902;font-style:italic">#下载源码</span>
+</span></span><span style="display:flex;"><span>tar xvf qemu-7.0.0.tar.xz	<span style="color:#8f5902;font-style:italic">#解压</span>
+</span></span><span style="display:flex;"><span>mkdir qemu_build <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#204a87">cd</span> qemu_build	<span style="color:#8f5902;font-style:italic"># 在下载目录新建文件夹build</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># 以下均在/build目录下</span>
+</span></span><span style="display:flex;"><span>../qemu-7.0.0/configure
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>make <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> make install	<span style="color:#8f5902;font-style:italic">#出去喝杯咖啡，打两把游戏在来看结果</span>
+</span></span></code></pre></div><p>编译成功后，qemu-system-arm就生成在当前目录
+和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vi ~/.bashrc	<span style="color:#8f5902;font-style:italic">#修改环境变量PATH</span>
+</span></span></code></pre></div><p>在.bashrc文件上次修改的基础上，重新修改
+export PATH=/home/ubuntu/qemu_build:/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">source</span> ~/.bashrc	<span style="color:#8f5902;font-style:italic">#让.bashrc生效</span>
+</span></span></code></pre></div><p>安装成功
+<img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160842204.png" alt="image-20220718160842204"></p>
+<h1 id="编译linux内核">编译Linux内核</h1>
+<p>内核代码下载地址：<a href="https://www.kernel.org/">The Linux Kernel Archives</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- vexpress_defconfig
+</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- menuconfig
+</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- -j2
+</span></span></code></pre></div><p>ps：Versatile Express系统由ARM Ltd提供，作为CortexA9四核处理器的开发环境，硬件由uATX主板和CoreTile Express A9x4子板组成。</p>
+<h2 id="验证只启动linux内核">验证只启动Linux内核</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>qemu-system-arm -M vexpress-a9 -m 128M -kernel ~/linux-5.15.53/arch/arm/boot/zImage -dtb ~/linux-5.15.53/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -nographic
+</span></span></code></pre></div><p>ps：内核和设备树的路径每个人可能不一样，需要自己注意下</p>
+<p><img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160857131.png" alt="image-20220718160857131">
+启动成功，但还没有文件系统，操作系统稍后制作。
+输入ctrl+A+x退出qemu</p>
+<h1 id="编译busybox制作文件系统">编译busybox，制作文件系统</h1>
+<h2 id="编译">编译</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wget https://busybox.net/downloads/busybox-1.35.0.tar.bz2	<span style="color:#8f5902;font-style:italic">#下载源码</span>
+</span></span><span style="display:flex;"><span>tar xvf busybox-1.35.0.tar.bz2	<span style="color:#8f5902;font-style:italic">#解压</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> busybox-1.35.0/
+</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- defconfig
+</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- menuconfig
+</span></span></code></pre></div><ul>
+<li>
+<blockquote>
+<p>Settings —&gt;</p>
+<ul>
+<li>[*] Build static binary (no shared libs) #使用静态库</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- -j4
+</span></span><span style="display:flex;"><span>make <span style="color:#000">ARCH</span><span style="color:#ce5c00;font-weight:bold">=</span>arm <span style="color:#000">CROSS_COMPILE</span><span style="color:#ce5c00;font-weight:bold">=</span>arm-linux-gnueabi- install
+</span></span></code></pre></div><ul>
+<li>生成结果位于：当前根目录下的_install文件夹下</li>
+<li>备注：默认安装到根目录下的_install，若想更改，可以通过menuconfig里面的选项更改</li>
+</ul>
+<h2 id="制作文件系统镜像">制作文件系统镜像</h2>
+<h3 id="根目录构建">根目录构建</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p rootfs/<span style="color:#ce5c00;font-weight:bold">{</span>dev,etc/init.d,lib,proc,sys<span style="color:#ce5c00;font-weight:bold">}</span>   <span style="color:#8f5902;font-style:italic">#创建根目录</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp -raf busybox-1.35.0/_install/* rootfs        <span style="color:#8f5902;font-style:italic">#拷贝busybox命令到根目录</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty1 c <span style="color:#0000cf;font-weight:bold">4</span> 1			<span style="color:#8f5902;font-style:italic">#创建4个tty端终设备</span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty1 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">2</span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty2 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">2</span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty3 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">3</span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/tty4 c <span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/console c <span style="color:#0000cf;font-weight:bold">5</span> 1		<span style="color:#8f5902;font-style:italic">#创建console字符设备</span>
+</span></span><span style="display:flex;"><span>sudo mknod -m <span style="color:#0000cf;font-weight:bold">666</span> rootfs/dev/null c <span style="color:#0000cf;font-weight:bold">1</span> 3			<span style="color:#8f5902;font-style:italic">#创建null 字符设备</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vim rootfs/etc/init.d/rcS						<span style="color:#8f5902;font-style:italic">#输入如下内容</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#!/bin/bash 
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>mount -t proc proc /proc 
+</span></span><span style="display:flex;"><span>mount -t sysfs sysfs /sys 
+</span></span><span style="display:flex;"><span>/sbin/mdev -s 
+</span></span><span style="display:flex;"><span><span style="color:#204a87">echo</span> /sbin/mdev &gt; /proc/sys/kernel/hotplug      <span style="color:#8f5902;font-style:italic">#支持热插拔</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo chmod +x rootfs/etc/init.d/rcS
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> rootfs
+</span></span><span style="display:flex;"><span>find ./ <span style="color:#000;font-weight:bold">|</span> cpio -o --format<span style="color:#ce5c00;font-weight:bold">=</span>newc &gt; ./rootfs.img
+</span></span></code></pre></div><h2 id="启动qemu">启动qemu</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>qemu-system-arm -M vexpress-a9 -m 128M -kernel linux-5.15.53/arch/arm/boot/zImage -dtb linux-5.15.53/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -append <span style="color:#4e9a06">&#34;root=/dev/ram rdinit=sbin/init console=ttyAMA0&#34;</span> -nographic -initrd rootfs/rootfs.img
+</span></span></code></pre></div><p>启动成功
+<img src="https://raw.githubusercontent.com/gitliulf/picture/main/image-20220718160906354.png" alt="image-20220718160906354"></p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-995c359e0eda056a2e3b98e604c59580">News About Docsy</h1>
 	
 	<div class="td-byline mb-4">
