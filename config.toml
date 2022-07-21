@@ -6,7 +6,7 @@ title = "Tbus"
 publishdir = "docs"
 # Language settings
 contentDir = "content/alpha"
-defaultContentLanguage = "alpha"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
@@ -70,7 +70,7 @@ id = "UA-00000000-0"
 # Language configuration
 
 [languages]
-[languages.alpha]
+[languages.en]
 title = "Tbus"
 description = "A Docsy example site"
 languageName ="alpha"
