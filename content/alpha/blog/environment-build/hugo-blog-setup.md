@@ -53,14 +53,11 @@ git push **** #push到github
 
 
 
-
-
-
-
 ---
 
 至此完成一个完整的博客提交流程
 
 ## 注意事项
-{{< alert type="warning" title="注意事项!" >}}构建的时候发现有时候docs目录没有及时更新，提交之前建议手动删除docs再重新构建{{< /alert >}}
+{{< alert color="warning" title="注意事项!" >}}构建的时候发现有时候docs目录没有及时更新，提交之前建议手动删除docs再重新构建{{< /alert >}}
+
 

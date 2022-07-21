@@ -70,7 +70,7 @@
 &lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
 
 
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;注意事项!&lt;/h4&gt;
 
     构建的时候发现有时候docs目录没有及时更新，提交之前建议手动删除docs再重新构建
