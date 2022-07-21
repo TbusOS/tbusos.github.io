@@ -2,304 +2,284 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tbusos.github.io/zh/docs/overview/</loc>
+    <loc>/zh/docs/overview/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/beds/</loc>
+    <loc>/zh/docs/tasks/beds/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/ponycopters/configuring-ponycopters/</loc>
+    <loc>/zh/docs/tasks/ponycopters/configuring-ponycopters/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/getting-started/</loc>
+    <loc>/zh/docs/getting-started/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/examples/</loc>
+    <loc>/zh/docs/examples/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/ponycopters/launching-ponycopters/</loc>
+    <loc>/zh/docs/tasks/ponycopters/launching-ponycopters/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tutorials/multi-bear/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="alpha"
-                href="https://tbusos.github.io/docs/tutorials/multi-bear/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tbusos.github.io/zh/docs/tutorials/multi-bear/"
-                />
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/porridge/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/concepts/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/task/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tutorials/tutorial2/</loc>
+    <loc>/zh/docs/tutorials/multi-bear/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/docs/tutorials/tutorial2/"
+                href="/docs/tutorials/multi-bear/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/docs/tutorials/tutorial2/"
+                href="/zh/docs/tutorials/multi-bear/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/</loc>
+    <loc>/zh/docs/tasks/porridge/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tutorials/</loc>
+    <loc>/zh/docs/concepts/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/tasks/task/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/tutorials/tutorial2/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/docs/tutorials/"
+                href="/docs/tutorials/tutorial2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/docs/tutorials/"
+                href="/zh/docs/tutorials/tutorial2/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/reference/</loc>
+    <loc>/zh/docs/tasks/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/docs/contribution-guidelines/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/</loc>
+    <loc>/zh/docs/tutorials/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/docs/"
+                href="/docs/tutorials/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/docs/"
+                href="/zh/docs/tutorials/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/blog/news/</loc>
+    <loc>/zh/docs/reference/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/contribution-guidelines/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/blog/news/"
+                href="/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/blog/news/"
+                href="/zh/docs/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/blog/releases/</loc>
+    <loc>/zh/blog/news/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
   </url><url>
-    <loc>https://tbusos.github.io/zh/categories/</loc>
+    <loc>/zh/blog/releases/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/categories/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/categories/"
+                href="/zh/categories/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/tags/docs/</loc>
+    <loc>/zh/tags/docs/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/tags/docs/"
+                href="/tags/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/tags/docs/"
+                href="/zh/tags/docs/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/categories/linux/</loc>
+    <loc>/zh/categories/linux/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/categories/linux/"
+                href="/categories/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/categories/linux/"
+                href="/zh/categories/linux/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/categories/qemu/</loc>
+    <loc>/zh/categories/qemu/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/categories/qemu/"
+                href="/categories/qemu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/categories/qemu/"
+                href="/zh/categories/qemu/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/tags/</loc>
+    <loc>/zh/tags/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/tags/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/tags/"
+                href="/zh/tags/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</loc>
+    <loc>/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/blog/2018/10/06/easy-documentation-with-docsy/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/blog/2018/10/06/the-second-blog-post/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/blog/2018/01/04/another-great-release/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/getting-started/example-page/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/categories/examples/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/reference/parameter-reference/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/tags/sample/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/tags/test/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/docs/tasks/ponycopters/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/about/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/blog/2022/07/18/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8qemu%E5%90%AF%E5%8A%A8linux/"
+                href="/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/blog/2022/07/18/how-use-qemu-lunch-linux/"
+                href="/zh/about/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/blog/2018/10/06/easy-documentation-with-docsy/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/blog/2018/10/06/the-second-blog-post/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/blog/2018/01/04/another-great-release/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/getting-started/example-page/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/categories/examples/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/reference/parameter-reference/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/tags/sample/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/tags/test/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/docs/tasks/ponycopters/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/about/</loc>
+    <loc>/zh/blog/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/about/"
+                href="/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/about/"
+                href="/zh/blog/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/blog/</loc>
+    <loc>/zh/false/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="alpha"
+                href="/false/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/false/"
+                />
+  </url><url>
+    <loc>/zh/categories/placeholders/</loc>
+    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
+  </url><url>
+    <loc>/zh/search/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/blog/"
+                href="/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/blog/"
+                href="/zh/search/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/false/</loc>
+    <loc>/zh/tango/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/false/"
+                href="/tango/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/false/"
+                href="/zh/tango/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/categories/placeholders/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-  </url><url>
-    <loc>https://tbusos.github.io/zh/search/</loc>
+    <loc>/zh/</loc>
     <lastmod>2022-07-19T09:08:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/search/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/search/"
+                href="/zh/"
                 />
   </url><url>
-    <loc>https://tbusos.github.io/zh/tango/</loc>
+    <loc>/zh/true/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="alpha"
-                href="https://tbusos.github.io/tango/"
+                href="/true/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tbusos.github.io/zh/tango/"
-                />
-  </url><url>
-    <loc>https://tbusos.github.io/zh/</loc>
-    <lastmod>2022-07-19T09:08:05+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="alpha"
-                href="https://tbusos.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tbusos.github.io/zh/"
-                />
-  </url><url>
-    <loc>https://tbusos.github.io/zh/true/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="alpha"
-                href="https://tbusos.github.io/true/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tbusos.github.io/zh/true/"
+                href="/zh/true/"
                 />
   </url>
 </urlset>

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tbus – Documentation</title>
-    <link>https://tbusos.github.io/docs/</link>
+    <link>/docs/</link>
     <description>Recent content in Documentation on Tbus</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://tbusos.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Multi-Bear Domicile Setup</title>
-      <link>https://tbusos.github.io/docs/tutorials/multi-bear/</link>
+      <link>/docs/tutorials/multi-bear/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/docs/tutorials/multi-bear/</guid>
+      <guid>/docs/tutorials/multi-bear/</guid>
       <description>
         
         
@@ -328,10 +328,10 @@
     
     <item>
       <title>Docs: Another Tutorial</title>
-      <link>https://tbusos.github.io/docs/tutorials/tutorial2/</link>
+      <link>/docs/tutorials/tutorial2/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/docs/tutorials/tutorial2/</guid>
+      <guid>/docs/tutorials/tutorial2/</guid>
       <description>
         
         

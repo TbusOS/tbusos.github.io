@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tbus beata1 – Concepts</title>
-    <link>https://tbusos.github.io/zh/docs/concepts/</link>
+    <link>/zh/docs/concepts/</link>
     <description>Recent content in Concepts on Tbus beata1</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://tbusos.github.io/zh/docs/concepts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zh/docs/concepts/index.xml" rel="self" type="application/rss+xml" />
     
     
       

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tbus beata1 – Tutorials</title>
-    <link>https://tbusos.github.io/zh/docs/tutorials/</link>
+    <link>/zh/docs/tutorials/</link>
     <description>Recent content in Tutorials on Tbus beata1</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://tbusos.github.io/zh/docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zh/docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Multi-Bear Domicile Setup</title>
-      <link>https://tbusos.github.io/zh/docs/tutorials/multi-bear/</link>
+      <link>/zh/docs/tutorials/multi-bear/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/zh/docs/tutorials/multi-bear/</guid>
+      <guid>/zh/docs/tutorials/multi-bear/</guid>
       <description>
         
         
@@ -329,10 +329,10 @@
     
     <item>
       <title>Docs: Another Tutorial</title>
-      <link>https://tbusos.github.io/zh/docs/tutorials/tutorial2/</link>
+      <link>/zh/docs/tutorials/tutorial2/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/zh/docs/tutorials/tutorial2/</guid>
+      <guid>/zh/docs/tutorials/tutorial2/</guid>
       <description>
         
         

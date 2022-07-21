@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tbus beata1 – docs</title>
-    <link>https://tbusos.github.io/zh/tags/docs/</link>
+    <link>/zh/tags/docs/</link>
     <description>Recent content in docs on Tbus beata1</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://tbusos.github.io/zh/tags/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/zh/tags/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Getting Started</title>
-      <link>https://tbusos.github.io/zh/docs/getting-started/</link>
+      <link>/zh/docs/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/zh/docs/getting-started/</guid>
+      <guid>/zh/docs/getting-started/</guid>
       <description>
         
         
@@ -54,10 +54,10 @@
     
     <item>
       <title>Blog: how-use-qemu-lunch-linux</title>
-      <link>https://tbusos.github.io/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</link>
+      <link>/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</link>
       <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</guid>
+      <guid>/zh/blog/2022/07/18/how-use-qemu-lunch-linux/</guid>
       <description>
         
         
@@ -166,10 +166,10 @@ export PATH=/home/ubuntu/qemu_build:/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64
     
     <item>
       <title>Docs: Example Page</title>
-      <link>https://tbusos.github.io/zh/docs/getting-started/example-page/</link>
+      <link>/zh/docs/getting-started/example-page/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tbusos.github.io/zh/docs/getting-started/example-page/</guid>
+      <guid>/zh/docs/getting-started/example-page/</guid>
       <description>
         
         
