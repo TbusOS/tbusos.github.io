@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tbus – Documentation</title>
-    <link>/blogpage/docs/</link>
-    <description>Recent content in Documentation on Tbus</description>
+    <title>Tbus – Getting Started</title>
+    <link>/blogpage/docs/getting-started/</link>
+    <description>Recent content in Getting Started on Tbus</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/blogpage/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/blogpage/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
       

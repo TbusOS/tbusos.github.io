@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tbus – Documentation</title>
-    <link>/blogpage/docs/</link>
-    <description>Recent content in Documentation on Tbus</description>
+    <title>Goldydocs – Reference</title>
+    <link>/blogpage/en/docs/reference/</link>
+    <description>Recent content in Reference on Goldydocs</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/blogpage/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/blogpage/en/docs/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -14,11 +14,11 @@
     
     
     <item>
-      <title>Docs: Example Page</title>
-      <link>/blogpage/docs/getting-started/example-page/</link>
+      <title>Docs: Parameter Reference</title>
+      <link>/blogpage/en/docs/reference/parameter-reference/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blogpage/docs/getting-started/example-page/</guid>
+      <guid>/blogpage/en/docs/reference/parameter-reference/</guid>
       <description>
         
         
@@ -312,17 +312,7 @@ bar := &amp;#34;foo&amp;#34;;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;another-heading&#34;&gt;Another Heading&lt;/h2&gt;
-&lt;p&gt;Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.&lt;/p&gt;
-&lt;h3 id=&#34;this-document&#34;&gt;This Document&lt;/h3&gt;
-&lt;p&gt;Inguina genus: Anaphen post: lingua violente voce suae meus aetate diversi. Orbis unam nec flammaeque status deam Silenum erat et a ferrea. Excitus rigidum ait: vestro et Herculis convicia: nitidae deseruit coniuge Proteaque adiciam &lt;em&gt;eripitur&lt;/em&gt;? Sitim noceat signa &lt;em&gt;probat quidem&lt;/em&gt;. Sua longis &lt;em&gt;fugatis&lt;/em&gt; quidem genae.&lt;/p&gt;
-&lt;h3 id=&#34;pixel-count&#34;&gt;Pixel Count&lt;/h3&gt;
-&lt;p&gt;Tilde photo booth wayfarers cliche lomo intelligentsia man braid kombucha vaporware farm-to-table mixtape portland. PBR&amp;amp;B pickled cornhole ugh try-hard ethical subway tile. Fixie paleo intelligentsia pabst. Ennui waistcoat vinyl gochujang. Poutine salvia authentic affogato, chambray lumbersexual shabby chic.&lt;/p&gt;
-&lt;h3 id=&#34;contact-info&#34;&gt;Contact Info&lt;/h3&gt;
-&lt;p&gt;Plaid hell of cred microdosing, succulents tilde pour-over. Offal shabby chic 3 wolf moon blue bottle raw denim normcore poutine pork belly.&lt;/p&gt;
-&lt;h3 id=&#34;external-links&#34;&gt;External Links&lt;/h3&gt;
-&lt;p&gt;Stumptown PBR&amp;amp;B keytar plaid street art, forage XOXO pitchfork selvage affogato green juice listicle pickled everyday carry hashtag. Organic sustainable letterpress sartorial scenester intelligentsia swag bushwick. Put a bird on it stumptown neutra locavore. IPhone typewriter messenger bag narwhal. Ennui cold-pressed seitan flannel keytar, single-origin coffee adaptogen occupy yuccie williamsburg chillwave shoreditch forage waistcoat.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;This is the final element on the page and there should be no margin below this.
-&lt;/code&gt;&lt;/pre&gt;
+
       </description>
     </item>
     
