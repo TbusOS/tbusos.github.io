@@ -24,6 +24,9 @@
     <loc>/blog/2022/07/18/qemu-lunchlinux/</loc>
     <lastmod>2022-07-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/blog/build-environment/</loc>
+    <lastmod>2022-07-28T16:11:23+08:00</lastmod>
+  </url><url>
     <loc>/blog/news/</loc>
     <lastmod>2022-07-28T12:55:16+08:00</lastmod>
     <xhtml:link
@@ -49,9 +52,6 @@
                 hreflang="zh"
                 href="/blog/releases/"
                 />
-  </url><url>
-    <loc>/blog/build-environment/</loc>
-    <lastmod>2022-07-28T12:55:16+08:00</lastmod>
   </url><url>
     <loc>/docs/</loc>
     <lastmod>2022-07-28T12:55:16+08:00</lastmod>
