@@ -311,61 +311,39 @@ if (!doNotTrack) {
 		<time datetime="2022-07-20" class="text-muted">2022.07.20</time>
         
 	</div>
-	<h2 id="准备工作">准备工作</h2>
-<h3 id="安装go">安装go</h3>
-<blockquote>
-<p>下载go <a href="https://studygolang.com/dl">https://studygolang.com/dl</a>
-下载最新的golang版本后安装</p>
-</blockquote>
-<h3 id="安装npm">安装npm</h3>
-<blockquote>
-<p><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a>
-下载nodejs安装后会有npm命令</p>
-</blockquote>
-<h3 id="安装hugo">安装hugo</h3>
-<blockquote>
-<p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.101.0">https://github.com/gohugoio/hugo/releases/tag/v0.101.0</a>
-<a href="https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Windows-64bit.zip">https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Windows-64bit.zip</a>
-下载带extended的最新版本并安装</p>
-</blockquote>
-<h2 id="clone-博客仓库">Clone 博客仓库</h2>
+	<h2 id="clone-博客仓库">Clone 博客仓库</h2>
 <blockquote>
 <p>将博客clone到本地
 尽量使用ssh地址
 并再github上配置好公钥</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone git@github.com:TbusOS/tbusos.github.io.git
-</span></span></code></pre></div><h2 id="构建">构建</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm install 	<span style="color:#8f5902;font-style:italic">#下载 主题中的依赖</span>
-</span></span><span style="display:flex;"><span>hugo mod graph 	<span style="color:#8f5902;font-style:italic"># 下载hugo需要go依赖</span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#第一次构建以上两步可能时间比较久，后续不用执行这两个步骤</span>
-</span></span><span style="display:flex;"><span>hugo server 
-</span></span></code></pre></div><p>执行可以在本地 <a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a> 预览博客</p>
-<h2 id="试着提交">试着提交</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone git@github.com:TbusOS/blog.git
+</span></span></code></pre></div><h2 id="增加一个md文档">增加一个md文档</h2>
 <blockquote>
-<p>在目录 content/alpha/blog/environment-build 下按照已经有的文档写一篇文档</p>
+<p>在目录 content\zh\blog\build-environment 下按照已经有的文档写一篇文档</p>
+<p><strong>目前博客类的文章都放在这个目录</strong></p>
+<p>如果需要不同分类也可以按照blog这个目录下的文档复制一份进行修改</p>
+<p>文章的Header按照已有的文章格式写下以下字段</p>
 </blockquote>
-<blockquote>
-<p>重新执行hugo server 可以完成构建</p>
-</blockquote>
-<blockquote>
-<p>再次访问<a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a> 预览自己的文章</p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo <span style="color:#8f5902;font-style:italic">#执行hugo 可以完成构建，在docs目录下是要提交的文件，content目录是文章的目录需要一并提交</span>
-</span></span><span style="display:flex;"><span>git add . <span style="color:#8f5902;font-style:italic">#添加到提交目录</span>
-</span></span><span style="display:flex;"><span>git push **** <span style="color:#8f5902;font-style:italic">#push到github</span>
-</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">linkTitle</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 链接地址</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">author</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;Liulf&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 作者</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">categories</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;docs&#34;</span><span style="color:#000;font-weight:bold">]</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#8f5902;font-style:italic"># 分类</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">tags</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;blog&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34;markdown&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34;typora&#34;</span><span style="color:#000;font-weight:bold">]</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># tags 分类</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">title</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;Hugo构建&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 标题</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">date</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">2022-07-20</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 创建日期</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">weight</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># (这个是文章的顺序)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">description</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 文章描述</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>写完文章后提交到仓库即可</p>
+<h2 id="提交文档">提交文档</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git pus
+</span></span></code></pre></div><ul>
+<li>提交到github后会博客会自动构建大概需要50秒稍微等待一下</li>
+<li>访问<a href="https://tbusos.github.io/">Tbus (tbusos.github.io)</a>刷新一下查看是否更新成功</li>
+<li>如果没有更新请联系Liulf</li>
+</ul>
+<hr>
 <p>至此完成一个完整的博客提交流程</p>
-<h2 id="注意事项">注意事项</h2>
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">注意事项!</h4>
-
-    构建的时候发现有时候docs目录没有及时更新，提交之前建议手动删除docs再重新构建
-
-</div>
-
 
 </div>
 
