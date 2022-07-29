@@ -21,6 +21,9 @@
     <loc>/blog/2022/07/20/typora-picgo/</loc>
     <lastmod>2022-07-28T12:55:16+08:00</lastmod>
   </url><url>
+    <loc>/blog/2022/07/20/%E5%85%B3%E4%BA%8Etbus/</loc>
+    <lastmod>2022-07-29T20:31:46+08:00</lastmod>
+  </url><url>
     <loc>/blog/2022/07/19/cpu%E5%A4%9A%E6%A0%B8%E9%94%81%E6%8C%87%E4%BB%A4-wfe%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2022-07-29T11:06:17+00:00</lastmod>
   </url><url>
@@ -47,10 +50,10 @@
                 />
   </url><url>
     <loc>/tags/blog/</loc>
-    <lastmod>2022-07-28T16:44:36+08:00</lastmod>
+    <lastmod>2022-07-29T20:31:46+08:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2022-07-29T11:06:17+00:00</lastmod>
+    <lastmod>2022-07-29T20:31:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -63,13 +66,13 @@
                 />
   </url><url>
     <loc>/categories/docs/</loc>
-    <lastmod>2022-07-28T16:44:36+08:00</lastmod>
+    <lastmod>2022-07-29T20:31:46+08:00</lastmod>
   </url><url>
     <loc>/tags/markdown/</loc>
     <lastmod>2022-07-28T16:44:36+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-07-29T11:06:17+00:00</lastmod>
+    <lastmod>2022-07-29T20:31:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -80,6 +83,9 @@
                 hreflang="zh"
                 href="/tags/"
                 />
+  </url><url>
+    <loc>/tags/tbus/</loc>
+    <lastmod>2022-07-29T20:31:46+08:00</lastmod>
   </url><url>
     <loc>/tags/typora/</loc>
     <lastmod>2022-07-28T16:44:36+08:00</lastmod>
