@@ -265,7 +265,7 @@ if (!doNotTrack) {
     
 	
 
-    <li><a href="#pg-dc05cb331f41de0c14261141d3c49755">cpu多核锁指令-WFE原理</a></li>
+    <li><a href="#pg-fb94d41c4d1f2327ab92abc40eb67530">cpu多核锁指令-WFE原理</a></li>
 
 
 
@@ -611,7 +611,7 @@ export PATH=/home/ubuntu/qemu_build:/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64
   
 
 <div class="td-content" style="">
-    <h1 id="pg-dc05cb331f41de0c14261141d3c49755">cpu多核锁指令-WFE原理</h1>
+    <h1 id="pg-fb94d41c4d1f2327ab92abc40eb67530">cpu多核锁指令-WFE原理</h1>
 	<div class="lead">今天我想分享一个跟多核锁原理相关的东西，由于我搞 arm 居多，所以目前只研究了 arm 架构下的 WFE 指令，分享出来，如果有表述不精准或者错误的地方还请大家指出，非常感谢。研究这个原因也是只是想搞清楚所以然和来龙去脉，以后写代码可以更游刃有余.</div>
 	<div class="td-byline mb-4">
 		 <b>sky (<a href="mailto:zhangbinghua2012@163.com">zhangbinghua2012@163.com</a>)</b> |
@@ -871,9 +871,23 @@ export PATH=/home/ubuntu/qemu_build:/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64
 </span></span><span style="display:flex;"><span>    <span style="color:#000">EnterHypMode</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">new_spsr_value</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">preferred_exceptn_return</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">Additional</span> <span style="color:#000">pseudocode</span> <span style="color:#000">functions</span> <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">exception</span> <span style="color:#000">handling</span> <span style="color:#000">on</span> <span style="color:#000">page</span> <span style="color:#000">B1</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1221</span> <span style="color:#000">defines</span> <span style="color:#000">the</span> <span style="color:#000">EnterHypMode</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000">pseudocode</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">procedure</span><span style="color:#000;font-weight:bold">.</span>
-</span></span></code></pre></div><p><img src="pictures.assets/image-20220719201300279.png" alt="image-20220719201300279">
-Here is a pictures: (<code>image-20220719201300279.png</code>)
-{{ $image := .Resources.GetMatch &ldquo;image-20220719201300279.png&rdquo;  }}</p>
+</span></span></code></pre></div>
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+	<img class="card-img-top" src="/blog/2022/07/19/cpu%E5%A4%9A%E6%A0%B8%E9%94%81%E6%8C%87%E4%BB%A4-wfe%E5%8E%9F%E7%90%86/image-20220719201300279_hu16ba9ede6f8109a7933eccf29aa0d9ee_82343_600x300_fill_catmullrom_smart1_3.png" width="600" height="300">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Fetch and scale an image in the upcoming Hugo 0.43.
+<small class="text-muted"><br/>Photo: CC-BY-CA</small></p>
+	</div>
+	
+</div>
 <p><strong>ClearEventRegister()</strong></p>
 <p>Clear the Event Register of the current processor 清除Event Register的bit</p>
 <p><strong>EventRegistered()</strong></p>
