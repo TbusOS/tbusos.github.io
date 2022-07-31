@@ -32,15 +32,15 @@ source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/2022/07/18/qemu-lunchlinux/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-07-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-18T00:00:00+00:00" /><meta property="og:site_name" content="Tbus" />
+<meta property="article:modified_time" content="2022-07-31T23:29:08+08:00" /><meta property="og:site_name" content="Tbus" />
 
 <meta itemprop="name" content="qemu-lunchlinux">
 <meta itemprop="description" content="版本信息 系统版本：Ubuntu Server 20.04 LTS 64bit 编译器：9.4.0 交叉编译器：arm-linux-gnueabi-gcc (Linaro GCC 7.5-2019.12) 7.5.0 linux内核：linux-5.15.53 busybox：1.35.0 QEMU：7.0.0 ninja-build：1.10.0
 获取交叉编译链 下载地址：Linaro Releases tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	#解压 vi ~/.bashrc	#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件 在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录 export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH
 source ~/.bashrc	#让.bashrc生效 安装成功 编译QEMU sudo apt-get install ninja-build	#Need ninja. Ninja is a small build system with a focus on speed. wget https://download.qemu.org/qemu-7.0.0.tar.xz	#下载源码 tar xvf qemu-7.0.0.tar.xz	#解压 mkdir qemu_build &amp;&amp; cd qemu_build	# 在下载目录新建文件夹build # 以下均在/build目录下 ../qemu-7.0.0/configure make &amp;&amp; make install	#出去喝杯咖啡，打两把游戏在来看结果 编译成功后，qemu-system-arm就生成在当前目录 和上面一样，将编译出的qemu的可执行文件的目录加入PATH环境变量。"><meta itemprop="datePublished" content="2022-07-18T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-07-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-07-31T23:29:08+08:00" />
 <meta itemprop="wordCount" content="284">
-<meta itemprop="keywords" content="docs," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="qemu," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="qemu-lunchlinux"/>
 <meta name="twitter:description" content="版本信息 系统版本：Ubuntu Server 20.04 LTS 64bit 编译器：9.4.0 交叉编译器：arm-linux-gnueabi-gcc (Linaro GCC 7.5-2019.12) 7.5.0 linux内核：linux-5.15.53 busybox：1.35.0 QEMU：7.0.0 ninja-build：1.10.0
 获取交叉编译链 下载地址：Linaro Releases tar xvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi.tar.tar	#解压 vi ~/.bashrc	#修改环境变量PATH，让系统先去指定目录寻找交叉编译链的可执行文件 在.bashrc文件加上这行，交叉工具链的目录取决于自己解压的目录 export PATH=/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabi/bin:$PATH
@@ -195,8 +195,8 @@ if (!doNotTrack) {
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-blog-li">
   <a href="/blog/" title="Docsy Blog" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-blog"><span class="">博客</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-blogbuild-environment-li">
-  <a href="/blog/build-environment/" title="build-environment" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-blogbuild-environment"><span class="">环境搭建</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-blogblog-build-environment-li">
+  <a href="/blog/blog-build-environment/" title="blog-build-environment" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-blogblog-build-environment"><span class="">博客环境搭建</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220720hugoe69e84e5bbba-li">
   <a href="/blog/2022/07/20/hugo%E6%9E%84%E5%BB%BA/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-blog20220720hugoe69e84e5bbba"><span class="">Hugo构建</span></a>
@@ -204,15 +204,20 @@ if (!doNotTrack) {
   <a href="/blog/2022/07/20/typora-picgo/" title="typora PicGo" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-blog20220720typora-picgo"><span class="">Typora 图床设置</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220720e585b3e4ba8etbus-li">
   <a href="/blog/2022/07/20/%E5%85%B3%E4%BA%8Etbus/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-blog20220720e585b3e4ba8etbus"><span class="">关于Tbus</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220718qemu-lunchlinux-li">
-  <a href="/blog/2022/07/18/qemu-lunchlinux/" title="qemu-lunchlinux" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-blog20220718qemu-lunchlinux"><span class="td-sidebar-nav-active-item">如何使用qemu启动linux</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-blogcpu-li">
-  <a href="/blog/cpu/" title="CPU" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-blogcpu"><span class="">CPU Releases</span></a>
+  <a href="/blog/cpu/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-blogcpu"><span class="">CPU</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220719cpue5a49ae6a0b8e99481e68c87e4bba4-wfee58e9fe79086-li">
   <a href="/blog/2022/07/19/cpu%E5%A4%9A%E6%A0%B8%E9%94%81%E6%8C%87%E4%BB%A4-wfe%E5%8E%9F%E7%90%86/" title="cpu多核锁指令-WFE原理" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-blog20220719cpue5a49ae6a0b8e99481e68c87e4bba4-wfee58e9fe79086"><span class="">arm-wfe</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-bloglinux-build-li">
+  <a href="/blog/linux-build/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-bloglinux-build"><span class="">Linux Build</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20220718qemu-lunchlinux-li">
+  <a href="/blog/2022/07/18/qemu-lunchlinux/" title="qemu-lunchlinux" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-blog20220718qemu-lunchlinux"><span class="td-sidebar-nav-active-item">如何使用qemu启动linux</span></a>
 </li>
   </ul>
 </li>
@@ -226,12 +231,12 @@ if (!doNotTrack) {
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href="https://github.com/TbusOS/blog/tree/main/content/zh/blog/build-environment/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> </a>
-  <a href="https://github.com/TbusOS/blog/edit/main/content/zh/blog/build-environment/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> </a>
-  <a href="https://github.com/TbusOS/blog/new/main/content/zh/blog/build-environment/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8qemu%e5%90%af%e5%8a%a8linux.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> </a>
+<a href="https://github.com/TbusOS/blog/tree/main/content/zh/blog/Linux-build/How-to-use-qemu-to-start-Linux/How-to-use-qemu-to-start-Linux.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> </a>
+  <a href="https://github.com/TbusOS/blog/edit/main/content/zh/blog/Linux-build/How-to-use-qemu-to-start-Linux/How-to-use-qemu-to-start-Linux.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> </a>
+  <a href="https://github.com/TbusOS/blog/new/main/content/zh/blog/Linux-build/How-to-use-qemu-to-start-Linux/How-to-use-qemu-to-start-Linux.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> </a>
   <a href="https://github.com/TbusOS/blog/issues/new?title=qemu-lunchlinux" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> </a>
   <a href="https://github.com/TbusOS/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fas fa-tasks fa-fw"></i> </a>
-  <a id="print" href="/blog/build-environment/_print/"><i class="fa fa-print fa-fw"></i> </a>
+  <a id="print" href="/blog/linux-build/_print/"><i class="fa fa-print fa-fw"></i> </a>
 
 </div>
 
@@ -279,9 +284,9 @@ if (!doNotTrack) {
         
           <li><a class="taxonomy-term" href="/tags/blog/" data-taxonomy-term="blog"><span class="taxonomy-label">blog</span><span class="taxonomy-count">3</span></a></li>
         
-          <li><a class="taxonomy-term" href="/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+          <li><a class="taxonomy-term" href="/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">2</span></a></li>
         
-          <li><a class="taxonomy-term" href="/tags/markdown/" data-taxonomy-term="markdown"><span class="taxonomy-label">markdown</span><span class="taxonomy-count">2</span></a></li>
+          <li><a class="taxonomy-term" href="/tags/qemu/" data-taxonomy-term="qemu"><span class="taxonomy-label">qemu</span><span class="taxonomy-count">1</span></a></li>
         
           <li><a class="taxonomy-term" href="/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">sample</span><span class="taxonomy-count">1</span></a></li>
         
@@ -315,17 +320,17 @@ if (!doNotTrack) {
       
       <ul class="taxonomy-terms">
         
+          <li><a class="taxonomy-term" href="/categories/blog-environment/" data-taxonomy-term="blog-environment"><span class="taxonomy-label">Blog Environment</span><span class="taxonomy-count">2</span></a></li>
+        
           <li><a class="taxonomy-term" href="/categories/cpu/" data-taxonomy-term="cpu"><span class="taxonomy-label">cpu</span><span class="taxonomy-count">1</span></a></li>
         
-          <li><a class="taxonomy-term" href="/categories/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+          <li><a class="taxonomy-term" href="/categories/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">1</span></a></li>
         
           <li><a class="taxonomy-term" href="/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">2</span></a></li>
         
-          <li><a class="taxonomy-term" href="/categories/linux/" data-taxonomy-term="linux"><span class="taxonomy-label">linux</span><span class="taxonomy-count">1</span></a></li>
+          <li><a class="taxonomy-term" href="/categories/linux-build/" data-taxonomy-term="linux-build"><span class="taxonomy-label">Linux Build</span><span class="taxonomy-count">1</span></a></li>
         
           <li><a class="taxonomy-term" href="/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
-        
-          <li><a class="taxonomy-term" href="/categories/qemu/" data-taxonomy-term="qemu"><span class="taxonomy-label">qemu</span><span class="taxonomy-count">1</span></a></li>
         
       </ul>
     </div>
@@ -336,7 +341,7 @@ if (!doNotTrack) {
 
           </aside>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
-            <a class="btn btn-lg -bg-orange td-rss-button d-none d-lg-block" href="/blog/build-environment/index.xml" target="_blank">
+            <a class="btn btn-lg -bg-orange td-rss-button d-none d-lg-block" href="/blog/linux-build/index.xml" target="_blank">
               RSS <i class="fa fa-rss ml-2 "></i>
             </a>
             
@@ -359,7 +364,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span></a></li>
+      <li><a class="taxonomy-term" href="/tags/qemu/" data-taxonomy-term="qemu"><span class="taxonomy-label">qemu</span></a></li>
     
   </ul>
 </div>
@@ -372,9 +377,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Categories:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="/categories/linux/" data-taxonomy-term="linux"><span class="taxonomy-label">linux</span></a></li>
-    
-      <li><a class="taxonomy-term" href="/categories/qemu/" data-taxonomy-term="qemu"><span class="taxonomy-label">qemu</span></a></li>
+      <li><a class="taxonomy-term" href="/categories/linux-build/" data-taxonomy-term="linux-build"><span class="taxonomy-label">Linux Build</span></a></li>
     
   </ul>
 </div>
@@ -490,7 +493,7 @@ export PATH=/home/ubuntu/qemu_build:/home/ubuntu/gcc-linaro-7.5.0-2019.12-x86_64
   <li>
     <a class="btn btn-primary disabled"><span class="mr-1">←</span></a>
   </li>
-    <a href="/blog/2022/07/20/%E5%85%B3%E4%BA%8Etbus/" aria-label=" - 关于Tbus" class="btn btn-primary"><span class="ml-1">→</span></a>
+    <a class="btn btn-primary disabled"><span class="ml-1">→</span></a>
   </li>
 </ul>
 

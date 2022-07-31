@@ -1,130 +1,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tbus – build-environment</title>
-    <link>/blog/build-environment/</link>
-    <description>Recent content in build-environment on Tbus</description>
+    <title>Tbus – Linux Build</title>
+    <link>/categories/linux-build/</link>
+    <description>Recent content in Linux Build on Tbus</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="/blog/build-environment/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/categories/linux-build/index.xml" rel="self" type="application/rss+xml" />
     
     
       
         
       
     
-    
-    <item>
-      <title>Blog: Hugo构建</title>
-      <link>/blog/2022/07/20/hugo%E6%9E%84%E5%BB%BA/</link>
-      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/07/20/hugo%E6%9E%84%E5%BB%BA/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;clone-博客仓库&#34;&gt;Clone 博客仓库&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;将博客clone到本地
-尽量使用ssh地址
-并再github上配置好公钥&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone git@github.com:TbusOS/blog.git
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;增加一个md文档&#34;&gt;增加一个md文档&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在目录 content\zh\blog\build-environment 下按照已经有的文档写一篇文档&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目前博客类的文章都放在这个目录&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果需要不同分类也可以按照blog这个目录下的文档复制一份进行修改&lt;/p&gt;
-&lt;p&gt;文章的Header按照已有的文章格式写下以下字段&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;linkTitle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 链接地址&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;author&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Liulf&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 作者&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;categories&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;docs&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 分类&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;tags&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;blog&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;typora&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# tags 分类&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hugo构建&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 标题&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;date&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;2022-07-20&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 创建日期&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;weight&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# (这个是文章的顺序)&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 文章描述&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;写完文章后提交到仓库即可&lt;/p&gt;
-&lt;h2 id=&#34;提交文档&#34;&gt;提交文档&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git pus
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;提交到github后会博客会自动构建大概需要50秒稍微等待一下&lt;/li&gt;
-&lt;li&gt;访问&lt;a href=&#34;https://tbusos.github.io/&#34;&gt;Tbus (tbusos.github.io)&lt;/a&gt;刷新一下查看是否更新成功&lt;/li&gt;
-&lt;li&gt;如果没有更新请联系Liulf&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;至此完成一个完整的博客提交流程&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Blog: typora PicGo</title>
-      <link>/blog/2022/07/20/typora-picgo/</link>
-      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/07/20/typora-picgo/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;1-typora-设置&#34;&gt;1. Typora 设置&lt;/h2&gt;
-&lt;p&gt;设置完成后点击下载PicGo下载PicGo&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gitliulf/picture/main/1658280424709.png&#34; alt=&#34;1658280424709&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2-picgo设置&#34;&gt;2. PicGo设置&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;安装github-plus插件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283204030.png&#34; alt=&#34;1658283204030&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;去github创建一个Token用于上传图片使用，这一步一定要记下token最好存在&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283319167.png&#34; alt=&#34;1658283319167&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;创建Token至少选择以下权限&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283463904.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;然后再回到PicGo进行一下设置一下&lt;/li&gt;
-&lt;li&gt;设置完以后可以在上传区上传一个图片测试&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283059013.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;在typora中添加图片将自动上传到github&#34;&gt;在Typora中添加图片将自动上传到github&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TbusOS/TbusBlogDoc/master/blog/pictures.assets/1658283928561.png&#34; alt=&#34;1658283928561&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Blog: 关于Tbus</title>
-      <link>/blog/2022/07/20/%E5%85%B3%E4%BA%8Etbus/</link>
-      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/07/20/%E5%85%B3%E4%BA%8Etbus/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_jpg/gBMHA1sBRwljzLrHicWkpD3YCFBdnIiaduKLqpO7vXP1NXdic0GyFrfvFJ20VovaaZOmhkuH02QKdMdq5hJWvntkw/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
-&lt;p&gt;TBUS是什么车？这是去哪里的车？我要怎么样才可以上这辆车？&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/gBMHA1sBRwljzLrHicWkpD3YCFBdnIiadus8iaDXhZOO9Fic3b5kLb7Biaicw4IykGAo7GkCsucNllqtia6OE6GAX2zSQ/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
-&lt;p&gt;我们TBUS团队&lt;/p&gt;
-&lt;p&gt;我们是一个专注于技术学习与分享的团体，目前团队的正式成员涵盖国内顶尖IT技术人员&lt;/p&gt;
-&lt;p&gt;在这里我们边学习技术边做一些有趣的项目（小游戏，火车售票系统，聊天系统等），这些项目在Linux这个平台上实现。&lt;/p&gt;
-&lt;p&gt;这不是外包，也不是什么孵化器项目，完全是我们自己的意愿去做，我们想要成立的是一个团队，不是部门也不是其他，最主要是能够有一个学习的氛围，希望能够吸引更多人来这里面学习。&lt;/p&gt;
-&lt;p&gt;团队名称“TBUS”的构思源自我们团队成员 寓意如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_jpg/gBMHA1sBRwmT4bSymyKaN3VhZ0SlmfbMCn4XNJYk5zZCaZMwdlBHdVY78xhjuEWy6MOdEB5Tqu8dUenXBuYnzg/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;Technology(技术)&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_jpg/gBMHA1sBRwmT4bSymyKaN3VhZ0SlmfbM3g8mKI3Gdqib24rH2IMRekTWBF0keeybchPllBzEWvERgbu2lH5pgCg/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;我们团队的创始人&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_jpg/gBMHA1sBRwmT4bSymyKaN3VhZ0SlmfbMlYrROHqzibvPicHr26AiaQCTcp3icWfibjTPLCdwfmFQ2vrdGMNiboLB4WDQ/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;Unite（团结）&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_jpg/gBMHA1sBRwmT4bSymyKaN3VhZ0SlmfbM5b1yZWyjEqsglzfueVmficL1m7piaIDN30trAiaQIMfUrOrKVXD0lc7Jg/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;图片&#34;&gt;Share（分享）我们团队是以分享交流知识的形式成长的&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;​    此名字是上述团队关键字英文字母的拼接，又可以理解成为一辆学习技术（Technology）的巴士(Bus),走走停停，欢迎志同道合的人上车,结伴同行，一起学习技术，中途也会有一部分人由于种种原因下车。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/gBMHA1sBRwljzLrHicWkpD3YCFBdnIiadu5SNx2WbQp5JHgUac0kN4Kh0mDApFx7XhkQ1aMdKrMykIiarNphicTnpQ/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
     
     <item>
       <title>Blog: qemu-lunchlinux</title>
