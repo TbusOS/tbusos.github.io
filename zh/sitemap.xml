@@ -25,7 +25,7 @@
     <lastmod>2022-07-29T20:31:46+08:00</lastmod>
   </url><url>
     <loc>/blog/2022/07/19/cpu%E5%A4%9A%E6%A0%B8%E9%94%81%E6%8C%87%E4%BB%A4-wfe%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
   </url><url>
     <loc>/blog/2022/07/18/qemu-lunchlinux/</loc>
     <lastmod>2022-07-18T00:00:00+00:00</lastmod>
@@ -53,7 +53,7 @@
     <lastmod>2022-07-29T20:31:46+08:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -72,7 +72,7 @@
     <lastmod>2022-07-28T16:44:36+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -91,16 +91,16 @@
     <lastmod>2022-07-28T16:44:36+08:00</lastmod>
   </url><url>
     <loc>/tags/arm/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
   </url><url>
     <loc>/categories/cpu/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
   </url><url>
     <loc>/tags/spin_lock/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
   </url><url>
     <loc>/tags/wfe/</loc>
-    <lastmod>2022-07-31T13:03:52+08:00</lastmod>
+    <lastmod>2022-07-31T13:07:01+08:00</lastmod>
   </url><url>
     <loc>/tags/docs/</loc>
     <lastmod>2022-07-28T12:55:16+08:00</lastmod>
