@@ -215,19 +215,6 @@
                 href="/"
                 />
   </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2022-07-28T12:55:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/blog/"
-                />
-  </url><url>
     <loc>/about/</loc>
     <lastmod>2022-07-28T19:50:30+08:00</lastmod>
     <xhtml:link
@@ -239,6 +226,19 @@
                 rel="alternate"
                 hreflang="zh"
                 href="/about/"
+                />
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2022-07-28T12:55:16+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/blog/"
                 />
   </url><url>
     <loc>/community/</loc>
